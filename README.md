@@ -28,3 +28,27 @@
   Alpha-Beta pruning improves efficiency greatly by pruning branches that doesn't need to be searched.
   
   This allows our AI agent to play perfectly and never lose a game.
+
+### 2. Task 2:- CHATBOT WITH RULE-BASED RESPONSES
+   ####
+   Steps:-
+   ######
+   1. Import the necessary libraries:-
+         ```
+         from nltk.chat.util import Chat, reflections
+         ```
+   2. Define Pairs:-
+
+   The `pairs` variable contains a list of patterns and responses. Each pattern is a regex pattern that matches user inputs. The chatbot responds with one of the             corresponding responses.`
+
+   3. Define Reflections:
+
+   The `reflections` dictionary contains a set of input transformations. For example, it maps "I am" to "you are".
+
+   4. Create and Start the Chat:
+```
+chat = Chat(pairs, reflections)
+chat.converse()
+```
+
+
